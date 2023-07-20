@@ -1,0 +1,163 @@
+@font-face {
+    font-family: JK;
+    src: url("./fonts/JK-Leetspeek-Web-Leet.woff");
+}
+
+@font-face {
+    font-family: ArialNarrow;
+    src: url("./fonts/ARIALN.TTF");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "kepler-std", serif;
+    font-weight: 300;
+    font-style: normal;
+    overflow-x: hidden;
+    font-family: ArialNarrow;
+}
+
+body{
+    width: 100vw;
+    height: 100dvh;
+}
+
+a{
+    color: yellow;
+    text-decoration: none;
+    font-family: JK;
+}
+
+.controlPanel{
+    width: 60vw;
+    max-width: 1200px;
+    height: 50vh;
+    border: 2px solid black;
+    margin: 2vw;
+    padding: 1.5vw;
+    color: black;
+    background-color: white;
+    overflow: hidden;
+}
+
+.controlPanel h2{
+    line-height: 2rem;
+}
+  
+.controlPanel h2 span,
+.boost{
+    color: yellow;
+    background-color: black;
+    padding: 3px;
+    text-decoration: underline;
+    font-family: JK;
+    font-size: 1.3rem;
+}
+
+.controlPanel h2 span:hover{
+    color: black;
+    background-color: yellow;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.controlPanel h2 span a:hover{
+    color: black;
+    background-color: yellow;
+} 
+
+.contentBox{
+    display: hidden;
+    box-sizing: border-box;
+    touch-action: none;
+}
+
+.boostActive{
+    width: 100vw;
+}
+
+.manip{
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    overflow: scroll;
+    padding: 2vw;
+    padding-top: 70px;
+    background-color: yellow;
+    color: black;
+    border: 2px solid black;
+    height: auto;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    right: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border: none;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 0px;
+}
+
+.controlPanel::-webkit-scrollbar-thumb:hover,
+.manip::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+}
+
+.manip h1{
+    width: fit-content;
+    background-color: black;
+    color: yellow;
+    padding: 5px;
+    font-family: JK;
+
+}
+
+.manip p{
+    font-size: 1.2rem;
+}
+
+.manip span{
+    color: yellow;
+    background-color: black;
+    padding: 2px;
+    font-family: JK;
+}
+
+.controlPanel{
+    width: 60vw;
+    max-width: 1200px;
+    height: 50vh;
+    border: 2px solid black;
+    margin: 2vw;
+    padding: 1.5vw;
+    color: black;
+    background-color: white;
+    overflow: scroll;
+}
+
+.closeButton{
+    position: absolute;
+    top: 17.5px;
+    background-color: yellow;
+    border: 2px solid black;
+    color: black;
+    font-size: 1.3rem;
+    padding: 5px;
+    transition: all 200ms ease;
+}
+
+.closeButton:hover{
+    background-color: black;
+    color: yellow;
+    cursor: pointer;
+}
